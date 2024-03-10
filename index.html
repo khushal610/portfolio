@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <!--------------css files---------------->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="new.css">
+    <!--------------------------fontawasome cdn----------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!------------------------bootstrap 5 cdn link------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-------------------header section------------------>
+    <header id="header" class="col-lg-12 col-md-12">
+        <div class="logo col-lg-6 col-md-4">
+            <a class="text-dark" href="#"><h2><img src="logo.png" class="logoImg"></h2></a>
+        </div>
+
+        <nav id="navBar"> <!-- col-lg-6 col-md-8-->
+            <ul class="d-flex justify-content-center">
+                <li class="py-4 px-2"><a href="#Home">Home</a></li>
+                <li class="py-4 px-2"><a href="#About">About</a></li>
+                <li class="py-4 px-2"><a href="#">Achievements</a></li>
+                <li class="py-4 px-2"><a href="#">Blogs</a></li>
+                <li class="py-4 px-2"><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="ThemeChangerContainer"><i class="fa-solid fa-circle-half-stroke" id="darkThemeIcon"></i></div>
+        <div id="ham_burger">
+            <i class="fa-solid fa-bars" style="pointer-events: none;"></i>
+        </div>
+
+    </header>
+
+    <!-----------------------------first section---------------------------------->
+    <section class="col-lg-12 col-md-12 d-flex py-5" id="Home">
+        <div class="col-lg-6 col-md-12 col-sm-12 leftsideProfile py-5">
+            <h2 class="pt-5 px-4">My Name Is Khushal Prajapati,</h2>
+            <div class="d-flex px-4 pb-2 pannel">
+                <h3>I am a </h3>
+                <ul>
+                    <li><span>Web-Designer</span></li>
+                    <li><span>Web-Develpoer</span></li>
+                    <li><span>Programmer</span></li>
+                </ul>
+            </div>
+            <p class="py-4 px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem minus enim hic
+                dolores impedit iure doloribus velit unde, quasi soluta, esse vitae vero quia error sunt ducimus dolor
+                sint beatae aspernatur. Non aut consequuntur magni voluptates dolores, corrupti quis quos obcaecati
+                reprehenderit eos necessitatibus dolor cum neque at nesciunt facere.</p>
+            <a href="#Contact"><button class="btn btn-dark mx-5 px-4 b1">Hire Me</button></a>
+            <a href="Khushal's_Resume.pdf" target="_blank"><button class="btn btn-dark b1">Download CV</button></a>
+
+            <div class="social mx-5 my-5 col-lg-12 col-md-8 col-sm-6">
+                <button class="btn btn-success mx-2">
+                    <a class="text-white" href="https://wa.me/919913256679" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </button>
+                <button class="btn btn-primary mx-1">
+                    <a class="text-white" href="https://www.linkedin.com/public-profile/settings" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </button>
+                <button class="btn btn-danger mx-1">
+                    <a class="text-white" href="https://instagram.com/prajapatikhushal610?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </button>
+                <button class="btn btn-primary mx-1">
+                    <a class="text-white" href="https://www.facebook.com/khushal.prajapati.92?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 rightsideProfile">
+            <div class="mx-5 profile_img">
+                <div class="socialProfileIcon">
+                    <p>WEB-DESIGning</p>
+                    <p>WEB-DEveloping</p>
+                </div>
+                <!-- <img src="WhatsApp_Image_2023-11-25_at_06.39.11_0aca55b8-removebg-preview.png" height="100%" width="100%"> -->
+                <img src="demo1.jpg" height="100%" width="110%" style="background-color: lightgray;margin-left: -5%;">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-----------------------------------second section------------------------------------>
+    <section class="col-lg-12 col-md-12 my-10 position-relative" id="About">
+        <h2 class="d-flex justify-content-center">About&nbsp;<span class="sectionTitleEffect">Me</span></h2>
+
+        <div class="d-flex col-lg-12 col-md-12 leftSideAboutMe">
+            <div class="col-lg-6 col-md-12 py-4 px-4">
+                <p>Hello, I'm Khushal, a passionate web designer dedicated to crafting unique and engaging online experiences. With a keen eye for design and a love for clean, functional aesthetics, I specialize in creating visually appealing and user-friendly websites. My journey in web development has equipped me with a diverse skill set, encompassing HTML, CSS, JavaScript, and more. I thrive on turning ideas into interactive realities, ensuring seamless navigation and optimal performance. Over the years, I've collaborated on a variety of projects, from dynamic e-commerce platforms to immersive portfolio sites. Each project reflects my commitment to innovation and a deep understanding of user experience, making the digital world a visually captivating and accessible space.<br>Click view more button to view My Projects.</p>
+            </div>
+         
+            <div class="col-lg-6 col-md-6 rightSideAboutMe">
+                <div class="mx-5 ProfileImgHolder">
+                    <img src="working-characters-flat-design-web-banner_1308-128001.avif" height="100%" width="100%">
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a href="new.html"><button class="btn btn-dark">View More</button></a>
+        </div>
+    </section>
+
+    <!-----------------------------------third section-------------------------------------->
+    <section class="col-lg-12 col-md-12 py-5 " id="Education">
+        <div class="d-flex justify-content-center">
+            <h2> &nbsp; <span class="sectionTitleEffect">My</span> Journey</h2>
+        </div>
+
+        <div class="d-flex col-lg-10 col-md-12 mainContainerMyjourney"> <!--maincontainer of myjourney-->
+
+            <div class="col-lg-6 col-md-10 col-sm-8 col-12 mx-5 d-flex flex-column leftsideMyJourney">
+                <div class="d-flex justify-content-center py-4">
+                    <h4>Education</h4>
+                </div>
+                <div class="box col-lg-10 col-md-10 col-sm-10 px-5 mx-5 my-5">
+                    <h5>Secondary School</h5>
+                    <p><i class="fa-solid fa-school"></i> Holy Child School<br>
+                        <i class="fa-solid fa-calendar-days"></i> 2019-2020
+                    </p>
+                </div>
+                <div class="box col-lg-10 col-md-10 col-sm-10 px-5 mx-5">
+                    <h5>Higher Secondary School</h5>
+                    <p><i class="fa-solid fa-school"></i> vakharia pj high school<br>
+                        <i class="fa-solid fa-calendar-days"></i>2020-2021
+                    </p>
+                </div>
+                <div class="box col-lg-10 col-md-10 col-sm-10 px-5 my-5 mx-5">
+                    <h5>Bachelors Degree</h5>
+                    <p><i class="fa-solid fa-graduation-cap"></i> Ganpat University<br>
+                        <i class="fa-solid fa-calendar-days"></i> 2024 Present
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-10 col-sm-8 col-12 mx-5 d-flex flex-column rightsideMyJourney">
+                <div class="d-flex justify-content-center py-4">
+                    <h4>Experience</h4>
+                </div>
+                <div class="box col-lg-10 col-md-10 col-sm-10 px-5 mx-5 my-5">
+                    <h5>Web-Designing</h5>
+                    <p> [College Website, Tour Website, Portfolio,E-commerce website]<br></p>
+
+                </div>
+                <div class="box col-lg-10 col-md-10 col-sm-10 px-5 mx-5">
+                    <h5>Programming Learning</h5>
+                    <p>YouTube [Code With Harry]<br></p>
+
+                </div>
+                <div class="box col-lg-10 col-md-10 col-sm-10 px-5 my-5 mx-5">
+                    <h5>Digital Marketing</h5>
+                    <p>Trading<br></p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-----------------------fourth section---------------------->
+    <section class="col-lg-12 col-md-12 my-10">
+        <div class="d-flex justify-content-center">
+            <h2> &nbsp; <span class="sectionTitleEffect">My</span> Skills</h2>
+        </div>
+
+        <div class="d-flex col-lg-12 col-md-12 col-sm-12 mainContainerSkills"> <!--main container of skills-->
+
+            <!-----------------------left side programming skills---------------------->
+            <div class="col-lg-5 col-md-8 col-sm-8 col-8 my-5 mx-5">
+
+                <div class="py-3">
+                    <div class="d-flex justify-content-between">
+                        <span>HTML</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100" style="width:80%">
+                            <span class="sr-only">80% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-3">
+                    <div class="d-flex justify-content-between">
+                        <span>CSS</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width:75%">
+                            <span class="sr-only">75% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Java-Script</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100" style="width:50%">
+                            <span class="sr-only">50% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-3">
+                    <div class="d-flex justify-content-between">
+                        <span>JAVA</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100" style="width:70%">
+                            <span class="sr-only">70% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!------------------------------right side coding skills-------------------------------->
+            <div class="col-lg-5 col-md-8 col-sm-8 col-8 my-5 mx-5">
+
+                <div class="py-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Web-Desining</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width:75%">
+                            <span class="sr-only">75% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Responsive Web-Desining</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100" style="width:70%">
+                            <span class="sr-only">70% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Logo Desining</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                            aria-valuemax="100" style="width:60%">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Backend</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                            aria-valuemax="100" style="width:20%">
+                            <span class="sr-only">20% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="px-5 pb-5 col-lg-11 col-md-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolores explicabo a. Aspernatur facilis,
+            ipsum animi ad cum recusandae quod saepe facere placeat pariatur aliquid nesciunt tempora necessitatibus
+            veritatis consequuntur, nisi quaerat commodi deserunt porro illo voluptas et optio delectus. Ratione tempore
+            dolore labore illum aspernatur praesentium delectus at, quae magnam incidunt soluta sapiente accusamus neque
+            possimus mollitia iure, similique officia architecto! Dolorem delectus magni voluptatum? Facilis adipisci
+            voluptate suscipit et aliquid, exercitationem ea, soluta deserunt repellendus facere quis libero accusamus?
+            In, perspiciatis reiciendis! Dolorum facere vitae ut voluptatibus adipisci ullam, alias repellendus eaque.
+            Ex molestiae doloribus non culpa ipsam?
+        </div>
+    </section>
+
+    <!-----------------------------slider section---------------------------->
+    <section class="col-lg-12 col-md-12 sliderSec">
+        <div class="d-flex justify-content-center">
+            <h2> &nbsp; <span class="sectionTitleEffect">My</span> Projects</h2>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 my-5 d-flex justify-content-center">
+            <div class="sliderImgHolder col-lg-8 col-md-8 col-sm-10 col-10">
+                
+                <div class="slide_box">
+                    <button class="btn btn-dark text-white slider_btn btn1" onclick="fun1()"><</button>
+                        <img src="2_4847.jpg" id="slider_img" class="img-fluid" alt="Responsive image">
+                    <button class="btn btn-dark text-white slider_btn btn2" onclick="fun2()">></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------------------from section------------------------->
+    <section class="col-lg-12 col-md-12 my-10" id="Contact">
+        <div class="d-flex justify-content-center">
+            <h2 class="pb-3">Contact&nbsp;<span class="sectionTitleEffect">Me</span></h2>
+        </div>
+        <div class="frmContainer d-flex col-lg-12 col-md-12 justify-content-center formleftside">
+            <div class="formHolderBox col-lg-6 col-md-8 col-10 col-sm-10">
+                <div class="col-lg-12 mx-5">
+                    <div class="icon d-flex justify-content-center"><i class="sectionTitleEffect text-dark fa-solid fa-user display-1"></i></div>
+                    <form class="form" method="post">
+                        <div class="col-lg-12">
+                            <input class="form-control my-2" type="text" name="name" placeholder="Name" required>
+                            <input class="form-control my-2" type="email" name="email" placeholder="Email" required>
+                            <input class="form-control my-2" type="text" name="contact" placeholder="Contact No" required>
+                            <textarea class="form-control my-2" placeholder="Type Suggestions here"></textarea>
+                            <input class="form-control my-2" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="frm-imgHolder col-lg-4 col-md-3 mx-5 formrightside">
+                <img src="global-network-connection-world-map-point-line-composition-concept-global-business-vector-illustration_41981-1908-removebg.png" height="100%" width="110%" class="contactImg">
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------footer section----------------------->
+    <footer class="bg-dark text-white">
+        <div class="col-lg-12 col-md-12 d-flex p-5 footermainContainer">
+            <div class="d-flex flex-column col-lg-6 col-md-6 col-sm-12 footerleftside">
+                <h3>Copyright © 2023 by Khushal | All rights reserved</h3>
+                <span>Join Social Media Plateform For More Information.</span>
+            </div>
+
+            <div class="mx-4 col-lg-4 col-md-6 d-flex col-sm-12 justify-content-between footerrightside">
+                <div>
+                    <h4>Contact Me</h4>
+                    <h6>
+                        <a href="mailto:prajapatikhushal610@gmail.com" target="_blank" class="text-white"><i class="mx-1 fa fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/919913256679" target="_blank" class="text-white"><i class="mx-1 fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/public-profile/settings" target="_blank" class="text-white"><i class="mx-1 fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/prajapatikhushal610?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white"><i class="mx-1 fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/khushal.prajapati.92?mibextid=ZbWKwL" target="_blank" class="text-white"><i class="mx-1 fa-brands fa-facebook-f"></i></a>
+                    </h6>
+                </div>
+                <div class="QuickLinks">
+                    <h4>Quick Links</h4>
+                    <a href="#Home" class="text-white Links"><h6>Home</h6></a>
+                    <a href="#About" class="text-white"><h6>About</h6></a>
+                    <a href="#" class="text-white"><h6>Blogs</h6></a>
+                    <a href="#Contact" class="text-white"><h6>Contact</h6></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

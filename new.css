@@ -1,0 +1,115 @@
+@media (max-width:991px){
+    .rightsideProfile{
+        display: none;
+    }
+    .leftsideProfile{
+        width: 100%;
+    }
+    .leftSideAboutMe{
+        width: 100%;
+    }
+    .rightSideAboutMe{
+        display: none;
+    }
+    .formleftside{
+        width: 100%;
+    }
+    .formrightside{
+        display: none;
+    }
+    .cardMainContainer{
+        display: grid;
+        place-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .card-1{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:914px){
+    .mainContainerMyjourney,
+    .mainContainerSkills{
+        display: grid;
+        flex-direction: column;
+        place-items: center;
+    }
+}
+
+@media (max-width:880px){
+    .mainContainerMyjourney,
+    .mainContainerSkills{
+        display: grid;
+        flex-direction: column;
+        place-items: center;
+    }
+    .slider_btn{
+        visibility: hidden;
+    }
+}
+
+@media (max-width:767px){
+    .footermainContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerrightside{
+        margin-top: 1rem;
+    }
+    .cardMainContainer{
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width:645px){
+    #ham_burger{
+        display: block;
+        display: grid;
+        place-items: center;
+        border-radius: 7px;
+        position: absolute;
+        right:5%;
+        top:25%;
+        cursor: pointer;
+        color:white;
+        box-shadow: inset 4px 4px 10px rgba(0,0,0,0.6);
+    }
+    #navBar{
+        height: 80vh;
+        width: 100%;
+        background-color:rgba(0,0,0,0.9);
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top:100%;
+        left:100%;
+        /* display: none; */
+    }
+    #navBar.active{
+        height: 80vh;
+        width: 100%;
+        /* display: block; */
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top:100%;
+        left:0%;
+        transition: 1s ease-in-out;
+    }
+    #navBar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #navBar ul li{
+        line-height: 30px;
+    }
+    #navBar ul li a{
+        color:#fff;
+    }
+    .ThemeChangerContainer{
+        right: 17%;
+        top:35%;
+    }
+}
