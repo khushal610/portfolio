@@ -1,0 +1,7 @@
+.skill-images{
+    filter: grayscale(100);
+}
+
+.skill-images:hover{
+    cursor: pointer;
+}
