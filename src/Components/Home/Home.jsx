@@ -1,13 +1,19 @@
 import React, { useRef, useState } from 'react'
+import { NavLink } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
-import { FaWhatsapp,FaGithub,FaLinkedin,FaInstagram,FaLaptopCode  } from "react-icons/fa";
-import { FaCode } from "react-icons/fa6";
+import emailjs from '@emailjs/browser';
+import Chatbot from 'react-chatbot-kit'
+import 'react-chatbot-kit/build/main.css'
+import config from '../../ChatBot/config.js'
+import MessageParser from '../../ChatBot/MessageParser.jsx';
+import ActionProvider from '../../ChatBot/ActionProvider.jsx';
 import '../../App.css';
 import './slider.css';
 import EdCard from '../templates/EdCard';
 import ExCard from '../templates/ExCard';
-import { NavLink } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
+import { FaWhatsapp,FaGithub,FaLinkedin,FaInstagram,FaLaptopCode  } from "react-icons/fa";
+import { FaCode } from "react-icons/fa6";
+import { IoMdChatboxes } from "react-icons/io";
 
 function Home() {
 
@@ -15,6 +21,12 @@ function Home() {
     const [email,setEmail] = useState();
     const [contact,setContact] = useState();
     const [message,setMessage] = useState();
+    const [chatStatus,setChatStatus] = useState(false);
+    console.log(chatStatus);
+  
+    const chatToggle = () => {
+      setChatStatus(prevStatus => !prevStatus);
+    };
 
     const contactRef = useRef(null);
 
@@ -56,7 +68,25 @@ function Home() {
   return (
     <>
     {/* ------------------------first class-------------------------- */}
-    
+    <div className='fixed right-4 md:right-24 bottom-4 md:bottom-10 shadow-xl z-40'>
+      <button
+        className='bg-slate-300 hover:bg-black hover:text-slate-300 p-3 text-2xl rounded-full fixed bottom-6 right-6 md:bottom-10 md:right-10'
+        onClick={() => chatToggle()}
+      >
+        <IoMdChatboxes />
+      </button>
+      {chatStatus === false ? null : (
+        <div className="fixed bottom-20 right-4 md:bottom-16 md:right-12 w-full max-w-xs">
+          <Chatbot
+            config={config}
+            messageParser={MessageParser}
+            actionProvider={ActionProvider}
+          />
+        </div>
+      )}
+    </div>
+
+
     <div className='main-container flex flex-col md:flex-row items-center justify-center py-10'>
       
       {/* Left Profile Section */}
